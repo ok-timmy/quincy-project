@@ -6,8 +6,11 @@
 }
 
 .line__chart{
-  padding: 2rem 1rem 2rem;
-  background: radial-gradient(circle, rgba(252,252,252,1) 0%, rgba(79,161,202,0.4) 70%, rgba(143,208,242,0.1) 100%);
+  margin: 2rem 1rem 2rem;
+  padding: 2rem 0.75rem 1rem;
+  background: rgb(79,161,202);
+  background: linear-gradient(0deg, rgba(79,161,202,0.6) 0%, rgba(79,161,202,0.4) 50%, rgba(79,161,202,0.2) 100%);
+  border-radius: 2rem;
 }
 
 

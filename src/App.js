@@ -33,7 +33,7 @@ function App() {
   console.log(newArray);
 
 
-  const totalDuration = 10000;
+  const totalDuration = 7000;
   const delayBetweenPoints = totalDuration / newArray[0].data.length;
   const previousY = (ctx) =>
     ctx.index === 0
@@ -55,15 +55,19 @@ function App() {
                 },
                 ticks: {
                   stepSize: 1,
+                  color: "black"
                 },
               },
               y: {
                 grid: {
-                  display: true,
+                  display: false,
                 },
                 min: 0,
                 max: 1400000,
                 beginAtZero: true,
+                ticks: {
+                  color: "black"
+                }
               },
             },
             responsive: true,
@@ -78,7 +82,10 @@ function App() {
                 position: "bottom",
                 align: "end",
                 labels: {
-                  boxPadding: 0,
+                  boxHeight: 1,
+                  boxWidth: 35,
+                  color: "black",
+                  padding: 50,
                 },
               },
             },
@@ -124,7 +131,7 @@ function App() {
                 data: newArray[0].data.map((value) => value.supply),
                 label: "orchard",
                 borderColor: "#32cd32",
-                borderWidth: 2.5,
+                borderWidth: 3,
                 fill: false,
                 lineTension: 0.3,
               },
@@ -132,7 +139,7 @@ function App() {
                 data: newArray[2].data.map((value) => value.supply),
                 label: "sapling",
                 fill: false,
-                borderWidth: 2.5,
+                borderWidth: 3,
                 borderColor: "#ffa700",
                 lineTension: 0.3,
               },
@@ -141,7 +148,7 @@ function App() {
                 label: "sprout",
                 fill: false,
                 borderColor: "#6e0397",
-                borderWidth: 2.5,
+                borderWidth: 3,
                 lineTension: 0.3,
               },
             ],
