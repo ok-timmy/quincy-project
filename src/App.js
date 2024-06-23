@@ -66,7 +66,8 @@ function App() {
                 max: 1400000,
                 beginAtZero: true,
                 ticks: {
-                  color: "black"
+                  color: "black",
+                  // align: "start",
                 }
               },
             },
@@ -85,7 +86,7 @@ function App() {
                   boxHeight: 1,
                   boxWidth: 35,
                   color: "black",
-                  padding: 50,
+                  // padding: 20,
                 },
               },
             },
